@@ -1,16 +1,83 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🧑‍💻 **Portfolio Website**
 
-Currently, two official plugins are available:
+A modern and responsive personal portfolio website built to showcase projects, skills, experience, and contact information. Designed with clean UI, smooth animations, and mobile-friendly layouts to create a strong professional online presence.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 **Features**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ✨ Clean and modern user interface
+* 📱 Fully responsive (mobile, tablet, desktop)
+* 🎨 Smooth animations and hover effects
+* 📂 Dedicated sections: Home, About, Skills, Projects, Contact
+* 🔗 Social media and project links
+* 📧 Working contact form (EmailJS / backend integration optional)
+* ⚡ Fast performance and SEO-optimized
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ **Tech Stack**
+
+| Category     | Technologies                                                  |
+| ------------ | ------------------------------------------------------------- |
+| **Frontend** | HTML5, CSS3, JavaScript / React.js                            |
+| **Styling**  | Tailwind CSS / Custom CSS / Bootstrap (based on your project) |
+| **Icons**    | Font Awesome / React Icons                                    |
+| **Hosting**  | Netlify / GitHub Pages / Vercel                               |
+
+---
+
+## 📂 **Project Structure**
+
+```
+/portfolio
+ ├── public/
+ ├── src/
+ │   ├── components/
+ │   ├── pages/
+ │   ├── assets/
+ │   └── App.js
+ ├── package.json
+ └── README.md
+```
+
+
+---
+
+## ⚙️ **How to Use**
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the project:
+
+```bash
+npm start
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## 🌐 **Live Demo**
+
+👉 [View Portfolio](https://your-portfolio-link.com)
+
+---
+
+
