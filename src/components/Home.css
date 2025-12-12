@@ -1,0 +1,130 @@
+/* MAIN WRAPPER */
+.home-wrapper {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100vh;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding: 20px;
+
+}
+
+/* CARD */
+.home-card {
+  /* width: 100%;
+  max-width: 1100px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+  display: flex;
+  flex-direction: row;
+  /* Explicitly set row for Desktop */
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  /* Increased gap for better separation */
+  background: #ffffff;
+  /* Light Grey Background */
+  position: relative;
+  overflow: hidden;
+  margin-top: 200px;
+  padding: 0 50px;
+}
+
+/* Right-side diagonal shape */
+.home-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+  /* Darker Grey */
+  /* clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%); */
+  /* z-index: 1; */
+}
+
+
+/* IMAGE BOX */
+.image-box {
+  width: 350px;
+  height: 350px;
+  background: transparent;
+  /* Changed from grey */
+  border-radius: 20px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* or contain, depending on preference */
+}
+
+/* TEXT */
+.role-text {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+  letter-spacing: 1px;
+  z-index: 2;
+  min-width: 450px;
+  /* Fixed width to prevent shaking */
+  animation: slideFadeIn 0.8s ease-out;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE (MOBILE LAYOUT) */
+@media (max-width: 768px) {
+  .home-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    margin-top: 100px;
+    /* Reduced from 200px */
+    z-index: 1;
+    /* Fixed from -1 */
+  }
+
+  /* Hide the diagonal/half-white background on mobile so it doesn't cover content */
+  .home-card::after {
+    display: none;
+  }
+
+  .image-box {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
+  }
+
+  .role-text {
+    font-size: 24px;
+    margin-top: 10px;
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}

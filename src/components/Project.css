@@ -1,0 +1,53 @@
+.project-grid-wrapper {
+  width: 100%;
+  padding: 50px 0;
+  border-radius: 20px;
+  margin-top: 30px;
+  /* margin-left: 10px; Removed global left margin */
+}
+
+.project-title {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: black;
+}
+
+.project-grid {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+    /* Center the grid container */
+    padding: 0 20px;
+    /* Add padding to prevent edge touching */
+  }
+
+  .project-title {
+    margin-top: 50px;
+    font-size: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

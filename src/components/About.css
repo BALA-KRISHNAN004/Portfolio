@@ -1,0 +1,145 @@
+/* Main container */
+.about-container {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background: transparent;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 140px;
+}
+
+/* Diagonal Shape */
+.about-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  background: #ffffff;
+  /* clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%); */
+  z-index: 1;
+}
+
+/* Inner Card Layout */
+.about-card {
+  display: flex;
+  flex-direction: row;
+  /* Explicitly set row for Desktop */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 80px;
+  /* Increased gap for better separation */
+  z-index: 2;
+}
+
+/* Left side text (Now on right visually due to HTML order) */
+.about-text {
+  color: black;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Grey placeholder box */
+.about-box {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.about-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* Buttons */
+.btn-row {
+  display: flex;
+  gap: 25px;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #444;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Right image placeholder (Now on left visually) */
+.about-image {
+  width: 350px;
+  height: 350px;
+  background: #faf4f4;
+  border-radius: 20px;
+  z-index: 2;
+  flex-shrink: 0;
+  overflow: hidden;
+  /* Added to clip the image */
+}
+
+.about-img-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------- */
+/*   MOBILE RESPONSIVE     */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .about-box {
+    text-align: justify;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-image {
+    order: -1;
+    /* Image goes UP on mobile */
+    width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
+  }
+
+  .btn-row {
+    justify-content: center;
+  }
+}

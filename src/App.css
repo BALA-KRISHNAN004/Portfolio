@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* background-color: #D9D9D9; Removed for Galaxy Background */
+  background-color: transparent;
+  /* Applied full screen background as requested */
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.main-content section {
+  margin-bottom: 100px;
+  scroll-margin-top: 100px;
+  /* Helps with scroll positioning behind fixed navbar */
+}
+
+@media (max-width: 768px) {
+  .main-content section {
+    margin-bottom: 80px;
+    scroll-margin-top: 80px;
+  }
+}

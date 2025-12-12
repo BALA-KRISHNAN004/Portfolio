@@ -1,0 +1,109 @@
+/* ---------- PAGE BACKGROUND ---------- */
+.project-wrapper {
+  width: 90%;
+  max-width: 600px;
+  min-height: 80vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #bfbfbf, #e0e0e0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+}
+
+/* ---------- TITLE ---------- */
+.project-title {
+  width: 90%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+  border: gray;
+}
+
+/* ---------- PREVIEW BOX ---------- */
+.preview-box {
+  width: 90%;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.preview-inner {
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  background: #d0d0d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Play Button */
+.play-icon {
+  font-size: 35px;
+  color: black;
+  background: white;
+  padding: 15px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.play-icon:hover {
+  background: black;
+  color: white;
+}
+
+/* ---------- BUTTON ROW ---------- */
+.btn-row {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.btn-black {
+  width: 120px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.btn-black:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- OUTPUT BOX ---------- */
+.output-box {
+  width: 90%;
+  min-height: 260px;
+  height: auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 480px) {
+  .btn-row {
+    gap: 10px;
+  }
+
+  .btn-black {
+    width: 100px;
+    padding: 8px;
+  }
+}
