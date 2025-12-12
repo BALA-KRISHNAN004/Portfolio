@@ -120,6 +120,11 @@
     text-align: center;
   }
 
+   .input-box,
+  .textarea-box {
+    color: black;
+  }
+
   .icons-section {
     flex-direction: row;
     justify-content: center;
@@ -133,5 +138,10 @@
 @media (max-width: 500px) {
   .submit-btn {
     width: 100%;
+  }
+
+   .input-box,
+  .textarea-box {
+    color: black;
   }
 }
