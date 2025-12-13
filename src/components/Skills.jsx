@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Skills.css";
-import { FaFigma, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaPython, FaBootstrap, FaPalette, FaComments, FaUsers, FaLightbulb, FaClock } from "react-icons/fa";
-import { SiExpress, SiMongodb } from "react-icons/si";
+import { FaFigma, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaPython, FaBootstrap, FaPalette, FaComments, FaUsers, FaLightbulb, FaClock, FaMicrosoft, FaSync, FaHandHoldingHeart } from "react-icons/fa";
+import { SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
 
 export default function Skills() {
   const technicalIcons = [
@@ -16,13 +16,17 @@ export default function Skills() {
     { icon: <FaGithub />, name: "GITHUB" },
     { icon: <FaFigma />, name: "FIGMA" },
     { icon: <FaPython />, name: "PYTHON" },
-    { icon: <FaBootstrap />, name: "BOOTSTRAP" }
+    { icon: <FaBootstrap />, name: "BOOTSTRAP" },
+    { icon: <SiTailwindcss />, name: "TAILWIND" },
+    { icon: <FaMicrosoft />, name: "MS OFFICE" }
   ];
   const softIcons = [
     { icon: <FaComments />, name: "Communication" },
     { icon: <FaUsers />, name: "Teamwork" },
     { icon: <FaLightbulb />, name: "Problem Solving" },
-    { icon: <FaClock />, name: "Time Management" }
+    { icon: <FaClock />, name: "Time Management" },
+    { icon: <FaSync />, name: "Adaptability" },
+    { icon: <FaHandHoldingHeart />, name: "Emotional Intelligence" }
   ];
 
   return (

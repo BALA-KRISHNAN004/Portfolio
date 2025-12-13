@@ -102,7 +102,7 @@
     height: auto;
   }
 
-   .publish-text{
+  .publish-text {
     text-align: justify;
   }
 
@@ -135,6 +135,10 @@
     margin-bottom: 15px;
     width: 100%;
     text-align: center;
+    color: #000;
+    position: relative;
+    z-index: 10;
+    display: block;
   }
 
   .publish-left {
@@ -161,7 +165,7 @@
     margin-bottom: 20px;
   }
 
-  .publish-text{
+  .publish-text {
     text-align: justify;
   }
 

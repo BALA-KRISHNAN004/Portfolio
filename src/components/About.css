@@ -14,18 +14,7 @@
   margin-top: 140px;
 }
 
-/* Diagonal Shape */
-.about-container::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 45%;
-  height: 100%;
-  background: #ffffff;
-  /* clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%); */
-  z-index: 1;
-}
+
 
 /* Inner Card Layout */
 .about-card {
