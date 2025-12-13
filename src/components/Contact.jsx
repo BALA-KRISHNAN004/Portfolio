@@ -6,13 +6,28 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
   const handleEmailSubmit = (e) => {
     e.preventDefault();
 
-    if (!name || !email || !message) {
+    if (!name || !email || !phone || !message) {
       alert("Please fill in all fields before submitting.");
+      return;
+    }
+
+    // Email Validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid E-mail ID.");
+      return;
+    }
+
+    // Phone Validation (Simple check for 10-15 digits)
+    const phoneRegex = /^[0-9+]{10,15}$/;
+    if (!phoneRegex.test(phone)) {
+      alert("Please enter a valid Phone Number.");
       return;
     }
 
@@ -24,7 +39,10 @@ const Contact = () => {
     const templateParams = {
       from_name: name,
       from_email: email,
-      message: message,
+      from_phone: phone,
+      to_name: "Bala Krishnan",
+      message: `${message}\n\nSender Email: ${email}\nSender Phone: ${phone}`,
+      reply_to: email,
     };
 
     emailjs
@@ -34,6 +52,7 @@ const Contact = () => {
         alert("Message sent successfully!");
         setName("");
         setEmail("");
+        setPhone("");
         setMessage("");
       })
       .catch((err) => {
@@ -56,6 +75,7 @@ const Contact = () => {
               placeholder="Name" 
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
 
             <input 
@@ -65,6 +85,16 @@ const Contact = () => {
               placeholder="E-mail ID" 
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+
+            <input 
+              type="tel" 
+              className="input-box" 
+              placeholder="Phone Number" 
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
             />
 
             <textarea
@@ -72,6 +102,7 @@ const Contact = () => {
               placeholder="Message ..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
             ></textarea>
 
             <button className="submit-btn" onClick={handleEmailSubmit}>
