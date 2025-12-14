@@ -9,6 +9,7 @@ import  realtime_chart from "../assets/realtime_chart.png";
 import employee_management from "../assets/employee_management.png";
 import ai_voice_assistant from "../assets/ai_voice_assistant.png";
 import Task_Manager from "../assets/Task_Manager.png";
+import Weather_Application from "../assets/Weather_Application.png";
 
 export default function ProjectGrid({ onProjectClick }) {
   const list = [
