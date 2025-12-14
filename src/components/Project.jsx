@@ -8,6 +8,7 @@ import hotel_booking from "../assets/hotel_booking.png";
 import  realtime_chart from "../assets/realtime_chart.png";
 import employee_management from "../assets/employee_management.png";
 import ai_voice_assistant from "../assets/ai_voice_assistant.png";
+import Task_Manager from "../assets/Task_Manager.png";
 
 export default function ProjectGrid({ onProjectClick }) {
   const list = [
@@ -17,7 +18,9 @@ export default function ProjectGrid({ onProjectClick }) {
     { id: 4, title: "Hotel Booking", github: "https://github.com/BALA-KRISHNAN004/Hotel-Booking.git", image: hotel_booking },
     { id: 5, title: "Real-Time Chat Application", github: "https://github.com/BALA-KRISHNAN004/Real-Time-Chart-Application.git", image: realtime_chart },
     { id: 6, title: "Employee Management System", github: "https://github.com/BALA-KRISHNAN004/Employee-Management-System.git", image: employee_management },
-    { id: 7, title: "AI voice assistant", github:"https://github.com/BALA-KRISHNAN004/AI-VOICE-ASSISTANT.git", image: ai_voice_assistant },
+    { id: 7, title: "Task Manager", github: "https://github.com/BALA-KRISHNAN004/Task-Manager.git" , image: Task_Manager },
+    { id: 8, title: "Weather Application" , github: "https://github.com/BALA-KRISHNAN004/Weather-Application.git" , image: Weather_Application},
+    { id: 9, title: "AI voice assistant", github:"https://github.com/BALA-KRISHNAN004/AI-VOICE-ASSISTANT.git", image: ai_voice_assistant },
   ];
 
   return (
