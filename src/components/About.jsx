@@ -17,10 +17,7 @@ const About = ({ onContactClick }) => {
 
           <div className="about-box">
             <p>
-              I'm Bala Krishnan.S. Creative and detail-oriented MERN Stack Developer Fresher with a strong foundation in Frontend development and
-UI design. Skilled in building responsive and scalable web applications using MongoDB, Express.js, React, and Node.js.
-Proficient in Figma for crafting intuitive user interfaces. Passionate about clean code, performance optimization, and
-delivering seamless user experiences while continuously learning new technologies.
+              I’m Bala Krishnan S, a creative and detail-oriented MERN Stack Developer (Fresher) with a strong foundation in frontend development and UI design. I specialize in building responsive and scalable web applications using MongoDB, Express.js, React, and Node.js. I’m also proficient in Figma for designing intuitive, user-centered interfaces. I’m passionate about writing clean, efficient code, optimizing performance, and delivering seamless user experiences, while continuously learning and adapting to new technologies.
             </p>
           </div>
 
