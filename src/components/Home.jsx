@@ -3,7 +3,7 @@ import "./Home.css";
 import home_avatar from "../assets/home_avatar.png";
 
 export default function Home() {
-  const roles = [ "I'M WEB DEVELOPER", "I'M UI/UX DESIGNER"];
+  const roles = [ "I'M WEB DEVELOPER", "I'M UI/UX DESIGNER",];
   const [index, setIndex] = useState(1);
 
   useEffect(() => {
